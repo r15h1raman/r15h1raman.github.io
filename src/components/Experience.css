@@ -1,0 +1,19 @@
+.experience-entry {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}

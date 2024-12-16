@@ -1,0 +1,64 @@
+/* * {
+  border: 1px solid red;
+} */
+
+.app {
+  margin-top: 30vh;
+}
+
+body {
+  min-width: 29em;
+  max-width: 29em;
+}
+
+h1.title {
+  margin: 0;
+}
+
+.navbar {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  gap: 0.5em;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003057;
+  font-weight: 300;
+  margin-top: 0;
+  font-size: large;
+  transition: font-weight 0.1s ease-in-out;
+}
+
+nav a.active {
+  font-weight: 500;
+}
+
+nav a:hover {
+  font-weight: 500;
+}
+
+.school {
+  color: #b3a369;
+  font-style: italic;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  transition: width 0.1s ease-in-out;
+}
+
+.icon:hover {
+  width: 1.1em;
+}
