@@ -4,7 +4,7 @@ function Experience() {
   return (
     <div>
       {ExperienceEntry(
-        "Palantir",
+        "Palantir Technologies",
         "New York, NY",
         "Incoming Software Engineer",
         "August 2025",

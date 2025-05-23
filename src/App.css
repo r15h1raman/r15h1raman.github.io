@@ -1,17 +1,21 @@
 /* * {
   border: 1px solid red;
 } */
-
 .app {
   margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 28em;
+  max-width: 28em;
 }
 
-body {
-  max-width: 29em;
-}
-
-h1.title {
-  margin: 0;
+h1 {
+  margin: 0.25em;
+  font-weight: bold;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar {
@@ -32,7 +36,6 @@ h1.title {
 
 nav a {
   text-decoration: none;
-  color: #003057;
   font-weight: 300;
   margin-top: 0;
   font-size: large;
@@ -47,9 +50,9 @@ nav a:hover {
   font-weight: 500;
 }
 
-.school {
-  color: #b3a369;
-  font-style: italic;
+nav a:link,
+nav a:visited {
+  color: black;
 }
 
 .icon {
@@ -60,22 +63,4 @@ nav a:hover {
 
 .icon:hover {
   width: 1.1em;
-}
-
-@media (max-width: 35em) {
-  .app {
-    margin-top: 20vh; /* Adjust this value as needed */
-  }
-  :root {
-    font-size: 0.75em; /* Adjust this value as needed */
-  }
-
-  body {
-    max-width: 30em;
-  }
-
-  .icon {
-    width: 0.75em;
-    height: 0.75em;
-  }
 }

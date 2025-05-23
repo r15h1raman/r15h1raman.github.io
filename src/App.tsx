@@ -11,49 +11,46 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <header>
-          <h1 className="title">
-            Rishi Raman, <br /> BS/MS student at{" "}
-            <span className="school">Georgia Tech</span>
-          </h1>
-          <nav className="navbar">
-            <div className="navbar-left">
-              <NavLink
-                to="/"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                About
-              </NavLink>
-              <NavLink
-                to="/education"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                Education
-              </NavLink>
-              <NavLink
-                to="/experience"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                Experience
-              </NavLink>
-            </div>
-            <div className="navbar-right">
-              <a
-                href="https://github.com/r15h1raman"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={githubIcon} alt="GitHub" className="icon" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/rishir03/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={linkedinIcon} alt="Linkedin" className="icon" />
-              </a>
-            </div>
-          </nav>
+          <h1 className="title">Rishi Raman</h1>
         </header>
+        <nav className="navbar">
+          <div className="navbar-left">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/education"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Education
+            </NavLink>
+            <NavLink
+              to="/experience"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Experience
+            </NavLink>
+          </div>
+          <div className="navbar-right">
+            <a
+              href="https://github.com/r15h1raman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={githubIcon} alt="GitHub" className="icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rishir03/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedinIcon} alt="Linkedin" className="icon" />
+            </a>
+          </div>
+        </nav>
         <main>
           <Routes>
             <Route path="/" element={<About />} />
