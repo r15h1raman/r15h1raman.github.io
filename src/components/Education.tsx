@@ -6,13 +6,13 @@ function Education() {
         "Georgia Tech",
         "Atlanta, GA",
         "M.S. in CS (Machine Learning)",
-        "May 2025"
+        "May '25"
       )}
       {EducationEntry(
         "Georgia Tech",
         "Atlanta, GA",
         "B.S. in CS (AI/ML and Systems)",
-        "May 2024"
+        "May '24"
       )}
     </div>
   );

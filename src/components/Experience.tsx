@@ -7,22 +7,22 @@ function Experience() {
         "Palantir Technologies",
         "New York, NY",
         "Incoming Software Engineer",
-        "August 2025",
+        "Aug '25",
         "???"
       )}
       {ExperienceEntry(
         "AWS SageMaker",
         "Seattle, WA",
         "Software Engineer Intern",
-        "May 2024",
-        "Aug 2024"
+        "May '24",
+        "Aug '24"
       )}
       {ExperienceEntry(
         "Comcast TPX",
         "Philadelphia, PA",
         "Software Engineer Intern",
-        "May 2023",
-        "Aug 2023"
+        "May '23",
+        "Aug '23"
       )}
     </div>
   );

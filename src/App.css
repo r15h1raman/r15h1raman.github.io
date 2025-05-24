@@ -2,12 +2,23 @@
   border: 1px solid red;
 } */
 .app {
-  margin-top: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 28em;
-  max-width: 28em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+
+  margin-top: 10vh;
+  min-width: 22em;
+  max-width: 22em;
+}
+
+@media (min-width: 1025px) {
+  .app {
+    margin-top: 20vh;
+    max-width: 28em;
+    min-width: 28em;
+  }
 }
 
 h1 {
@@ -19,9 +30,10 @@ h1 {
 }
 
 .navbar {
-  margin-top: 0;
+  padding-top: 0.2em;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid black;
 }
 
 .navbar-left {
@@ -43,11 +55,11 @@ nav a {
 }
 
 nav a.active {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 nav a:hover {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 nav a:link,
@@ -56,6 +68,7 @@ nav a:visited {
 }
 
 .icon {
+  margin-top: 0.1em;
   width: 1em;
   height: 1em;
   transition: width 0.1s ease-in-out;
