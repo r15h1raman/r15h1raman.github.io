@@ -22,16 +22,16 @@ function App() {
               About
             </NavLink>
             <NavLink
-              to="/education"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Education
-            </NavLink>
-            <NavLink
               to="/experience"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Experience
+            </NavLink>
+            <NavLink
+              to="/education"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Education
             </NavLink>
           </div>
           <div className="navbar-right">

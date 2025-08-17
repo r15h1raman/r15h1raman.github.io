@@ -2,8 +2,8 @@ function About() {
   return (
     <div>
       <p>
-        Hello! I am a recent graduate of Georgia Tech. My fields of interest
-        include:
+        Hello! Currently, I am a software engineer at Palantir. I am also a
+        recent graduate of Georgia Tech. My fields of interest include:
       </p>
       <ul>
         <li>distributed systems</li>
@@ -12,11 +12,6 @@ function About() {
         <li>compilers</li>
       </ul>
       <p>Outside of technology, I like to play the piano and stay active.</p>
-      <b>
-        <i>
-          I will be joining Palantir in NYC as a software engineer in August!
-        </i>
-      </b>
     </div>
   );
 }

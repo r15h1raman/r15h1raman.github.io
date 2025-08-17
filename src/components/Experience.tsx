@@ -6,7 +6,7 @@ function Experience() {
       {ExperienceEntry(
         "Palantir Technologies",
         "New York, NY",
-        "Incoming Software Engineer",
+        "Software Engineer",
         "Aug '25",
         "???"
       )}
