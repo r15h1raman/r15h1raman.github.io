@@ -2,8 +2,9 @@ function About() {
   return (
     <div>
       <p>
-        Hello! Currently, I am a software engineer at Palantir. I am also a
-        recent graduate of Georgia Tech. My fields of interest include:
+        Hello! Currently, I am a software engineer at Palantir Technologies. I
+        am also a graduate of the Georgia Institute of Technology. My fields of
+        interest include:
       </p>
       <ul>
         <li>distributed systems</li>

@@ -8,21 +8,21 @@ function Experience() {
         "New York, NY",
         "Software Engineer",
         "Aug '25",
-        "???"
+        "???",
       )}
       {ExperienceEntry(
         "AWS SageMaker",
         "Seattle, WA",
         "Software Engineer Intern",
         "May '24",
-        "Aug '24"
+        "Aug '24",
       )}
       {ExperienceEntry(
         "Comcast TPX",
         "Philadelphia, PA",
         "Software Engineer Intern",
         "May '23",
-        "Aug '23"
+        "Aug '23",
       )}
     </div>
   );
@@ -33,7 +33,7 @@ function ExperienceEntry(
   location: string,
   position: string,
   startDate: string,
-  endDate: string
+  endDate: string,
 ) {
   return (
     <div className="experience-entry">
