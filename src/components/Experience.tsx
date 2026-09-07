@@ -39,18 +39,14 @@ function ExperienceEntry(
     <div className="experience-entry">
       <div className="row">
         <div className="left">
-          <b>{company}</b>
+          <strong>{company}</strong>
         </div>
         <div className="right">{location}</div>
       </div>
-      <div className="row">
-        <div className="left">
-          <i>{position}</i>
-        </div>
+      <div className="row entry-detail">
+        <div className="left">{position}</div>
         <div className="right">
-          <i>
-            {startDate} - {endDate}
-          </i>
+          {startDate} - {endDate}
         </div>
       </div>
     </div>

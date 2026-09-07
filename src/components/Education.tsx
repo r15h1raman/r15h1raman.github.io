@@ -28,17 +28,13 @@ function EducationEntry(
     <div className="education-entry">
       <div className="row">
         <div className="left">
-          <b>{institution}</b>
+          <strong>{institution}</strong>
         </div>
         <div className="right">{location}</div>
       </div>
-      <div className="row">
-        <div className="left">
-          <i>{degree}</i>
-        </div>
-        <div className="right">
-          <i>{graduationDate}</i>
-        </div>
+      <div className="row entry-detail">
+        <div className="left">{degree}</div>
+        <div className="right">{graduationDate}</div>
       </div>
     </div>
   );

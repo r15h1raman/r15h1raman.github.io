@@ -2,68 +2,86 @@
   border: 1px solid red;
 } */
 .app {
+  --identity-width: min(16.625rem, calc(100% - 3rem));
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-
-  margin-top: 10vh;
-  min-width: 22em;
-  max-width: 22em;
+  width: calc(100vw - 3rem);
+  max-width: 30rem;
+  margin: 10vh 1.5rem 0;
 }
 
 @media (min-width: 1025px) {
   .app {
     margin-top: 20vh;
-    max-width: 28em;
-    min-width: 28em;
   }
 }
 
-h1 {
-  margin: 0em;
-  font-weight: bold;
-  font-size: 3em;
-  display: flex;
-  justify-content: center;
+.title {
+  box-sizing: border-box;
+  width: var(--identity-width);
+  margin: 0;
+  padding: 0.05em 0.15em 0.05em;
+  color: var(--background-color);
+  background-color: black;
+  font-weight: 800;
+  font-size: clamp(2.25rem, 13vw, 3rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
 }
 
-/* .title {
-  font-family: "Poltawski Nowy", "Open Sans", "Helvetica Neue", sans-serif;
-} */
-
 .navbar {
-  padding-top: 0.2em;
   display: flex;
+  align-items: stretch;
   justify-content: space-between;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
 }
 
 .navbar-left {
   display: flex;
-  gap: 0.5em;
+  width: var(--identity-width);
 }
 
 .navbar-right {
   display: flex;
-  gap: 0.5em;
 }
 
 nav a {
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 700;
   margin-top: 0;
-  font-size: large;
-  transition: font-weight 0.1s ease-in-out;
+  font-size: clamp(0.875rem, 4vw, 1rem);
+  transition:
+    color 0.1s ease-in-out,
+    background-color 0.1s ease-in-out;
 }
 
-nav a.active {
-  font-weight: 700;
+.navbar-left a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0.125rem 0;
+  line-height: 1;
 }
 
-nav a:hover {
-  font-weight: 700;
+.navbar-right a {
+  display: flex;
+  align-items: center;
+  padding: 0.125rem 0.25rem;
+  line-height: 1;
+}
+
+.navbar-left a.active,
+.navbar-left a:hover {
+  color: var(--background-color);
+  background-color: black;
+}
+
+.navbar-right a:hover,
+.navbar-right a:focus-visible {
+  background-color: black;
 }
 
 nav a:link,
@@ -72,12 +90,15 @@ nav a:visited {
 }
 
 .icon {
-  margin-top: 0.1em;
   width: 1em;
   height: 1em;
-  transition: width 0.1s ease-in-out;
+  transition:
+    filter 0.1s ease-in-out,
+    opacity 0.1s ease-in-out;
 }
 
-.icon:hover {
-  width: 1.1em;
+.navbar-right a:hover .icon,
+.navbar-right a:focus-visible .icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.96;
 }
