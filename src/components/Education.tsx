@@ -28,7 +28,7 @@ function EducationEntry(
     <div className="education-entry">
       <div className="row">
         <div className="left">
-          <strong>{institution}</strong>
+          <strong className="entry-name">{institution}</strong>
         </div>
         <div className="right">{location}</div>
       </div>
