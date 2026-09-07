@@ -39,7 +39,7 @@ function ExperienceEntry(
     <div className="experience-entry">
       <div className="row">
         <div className="left">
-          <strong>{company}</strong>
+          <strong className="entry-name">{company}</strong>
         </div>
         <div className="right">{location}</div>
       </div>
